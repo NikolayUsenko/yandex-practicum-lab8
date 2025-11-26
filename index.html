@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма с зависимыми полями</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <form class="form-for-select">
+
+        <label class="label-user-select" for="user-select">Выберите опцию:</label>
+        <select class="user-select-list" id="user-select" name="user-select" onchange="updateFields()">
+          <option class="user-select-item" value="">Выберите опцию</option>
+          <option class="user-select-item" value="option-1">Опция 1</option>
+          <option class="user-select-item" value="option-2">Опция 2</option>
+        </select>
+
+        <div class="container-for-answer"></div>
+
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
